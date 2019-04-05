@@ -1,0 +1,11 @@
+@model int[]
+
+<h1>Index View</h1>
+<p>Get to building things!</p>
+<p>@Model</p>
+@{
+    foreach(var num in @Model)
+    {
+        <p>@num</p>
+    }
+}

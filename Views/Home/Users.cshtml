@@ -1,0 +1,11 @@
+@using ViewModelFun.Models
+@model List<User>
+
+<h1>Index View</h1>
+<p>Get to building things!</p>
+@{
+    foreach(var user in Model)
+    {
+        <p>@user.FirstName @user.LastName</p>
+    }
+}
